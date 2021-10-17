@@ -29,5 +29,9 @@ Route::get('/dash', function () {
 //////////patients
 
 Route::get('/patients/', 'PatientController@index')->name('patients.index');
+Route::get('/patients/create', 'PatientController@create')->name('patients.create');
+Route::post('/patients/store', 'PatientController@store')->name('patients.store');
+Route::get('/patients/profil/{id}', 'PatientController@show')->name('patients.show');
+Route::put('/patients/profil/{id}', 'PatientController@update')->name('patients.update');
 
 Route::get('/patients/getpatients', 'PatientController@getPatients')->name('patients.api');
