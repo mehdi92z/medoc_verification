@@ -2,5 +2,5 @@
 
 @section('content')
 
-<h1>Good job niga</h1>
+<h1 style=" text-align: center;">Hello rafik</h1>
 @endsection

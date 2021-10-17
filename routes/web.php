@@ -25,3 +25,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dash', function () {
     return view('admin.dash');
 });
+
+//////////patients
+
+Route::get('/patients/', 'PatientController@index')->name('patients.index');
+
+Route::get('/patients/getpatients', 'PatientController@getPatients')->name('patients.api');
